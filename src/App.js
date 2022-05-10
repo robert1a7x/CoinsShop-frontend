@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Login from '../src/pages/Login';
 import Products from '../src/pages/Products';
 import Dashboard from '../src/pages/Dashboard';
+import './styles/App.css'
 
 function App() {
   return (

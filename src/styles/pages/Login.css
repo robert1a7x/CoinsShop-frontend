@@ -1,0 +1,72 @@
+.user-login-area {
+	display: flex;
+	background: linear-gradient( #c7ac53 100%, #fafafa 17%);
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.user-login-area img {
+  width: 400px;
+}
+
+.user-login-area form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(253, 252, 229);
+	border-radius: 8px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	height: 400px;
+  left: 372px;
+  top: 484px;
+  width: 550px;
+	margin: 20px;
+}
+
+.user-login-area form input {
+  background: white;
+  border: 1px solid #696655;
+  border-radius: 8px;
+  display: flex;
+  height: 35px;
+  margin: 5px 0;
+  padding: 12px 16px;
+  width: 350px;
+}
+
+.user-login-area form input::placeholder {
+  color: #6b7588;
+  font-family: Verdana , Tahoma , sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.user-login-area form button {
+  background: #c4ac5d;
+  border: 1px rgb(221, 221, 221) solid;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 16px;
+  height: 40px;
+  margin: 40px 0;
+  text-align: center;
+  width: 350px;
+}
+
+.user-login-area form button:hover {
+  background: #fcd659;
+}
+
+.user-login-area form p {
+  color: #b01726;
+  font-family: Verdana;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+	margin: 10px 10px;
+}

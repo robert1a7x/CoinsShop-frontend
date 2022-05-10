@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import logo from '../images/coinsShop.png';
 import { requestLogin } from '../services/requests';
+import '../styles/pages/Login.css';
 
 const Login = () => {
 	const [email, setEmail] = useState('');
