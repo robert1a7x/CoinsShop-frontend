@@ -55,8 +55,7 @@ const Login = () => {
 					? (
 						<p>
 							{
-								`O endereço de e-mail ou a senha não estão corretos.
-								Por favor, tente novamente.`
+								`E-mail ou a senha incorretos. Por favor, tente novamente.`
             	}
 						</p>
 					)
