@@ -18,4 +18,9 @@ export const requestData = async (endpoint) => {
   return data;
 };
 
+export const postProduct = async (endpoint, body) => {
+  const { data } = await api.post(endpoint, body);
+  return data;
+};
+
 export default api;
