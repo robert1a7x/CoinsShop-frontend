@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/components/DashboardButton.css'
 
 const DashboardButton = () => {
 	return (
-		<div>
-			<Link
-				className="dashboard-button"
-				to="/dashboard"
-			>
-				Admin Dashboard
-			</Link>
+		<div className="dasboard-container">
+			<div className="dashboard-button">
+				<Link
+					to="/dashboard"
+				>
+					Admin Dashboard
+				</Link>
+			</div>
 		</div>
 	)
 }

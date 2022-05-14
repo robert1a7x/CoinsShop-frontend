@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import DashboardButton from '../components/DashboardButton';
 import Header from '../components/Header';
 import { requestData, setToken } from '../services/requests';
+import '../styles/pages/Products.css'
 
 const Products = () => {
   const [isAdm, setIsAdm] = useState(false);
@@ -26,16 +27,17 @@ const Products = () => {
   }, []);
 
   return (
-    <div>
+    <div className="products-page">
       <Header email={user.email} coins={user.coins} />
       {isAdm ? <DashboardButton /> : null}
+      <h1>Produtos</h1>
       <div className="products-container">
         {products.map(({ name, description, price, image }) => (
-          <div key={name}>
+          <div className="product-card" key={name}>
+            <img src={image} alt={name} />
             <p>{name}</p>
             <p>{description}</p>
-            <p>{price}</p>
-            <img src={image} alt={name} />
+            <p>{price} Moedas</p>
           </div>
         ))}
       </div>

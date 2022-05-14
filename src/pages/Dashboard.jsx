@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import { postProduct, setToken } from '../services/requests';
+import '../styles/pages/Dashboard.css'
 
 const Dashboard = () => {
   const [name, setName] = useState('');

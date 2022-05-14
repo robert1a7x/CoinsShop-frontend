@@ -1,6 +1,6 @@
 .user-login-area {
 	display: flex;
-	background: linear-gradient( #c7ac53 100%, #fafafa 17%);
+	background: linear-gradient( #ddbf5e 100%, #fafafa 17%);
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
@@ -45,7 +45,7 @@
 }
 
 .user-login-area form button {
-  background: #c4ac5d;
+  background: #ecd177;
   border: 1px rgb(221, 221, 221) solid;
   border-radius: 8px;
   color: black;

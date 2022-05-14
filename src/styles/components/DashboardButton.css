@@ -1,0 +1,23 @@
+.dasboard-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dashboard-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(97, 125, 247);
+  border: 1px rgb(221, 221, 221) solid;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  margin: 30px 20px;
+  width: 200px;
+  height: 30px;
+}
+
+.dashboard-button a {
+	text-decoration: none;
+	color: white;
+}

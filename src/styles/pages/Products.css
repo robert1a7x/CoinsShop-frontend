@@ -1,0 +1,36 @@
+.products-page {
+	background: rgb(253, 251, 243);
+	height: 100vh;
+}
+
+.products-container {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px;
+}
+
+.product-card {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: rgb(255, 250, 246);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	margin: 80px 40px;
+	padding: 15px;
+}
+
+.product-card p {
+	margin: 10px;
+}
+
+.product-card img {
+	width: 250px;
+	height: 200px;
+}
