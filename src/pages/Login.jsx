@@ -9,16 +9,18 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [isLogged, setIsLogged] = useState(false);
   const [failedTryLogin, setFailedTryLogin] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const login = async (event) => {
     event.preventDefault();
-
+    setLoading(true);
     try {
       const endPoint = '/login';
 
       const { token, user } = await requestLogin(endPoint, { email, password });
 
       localStorage.setItem('user', JSON.stringify({ token, ...user }));
+      setLoading(false);
       setIsLogged(true);
     } catch (error) {
       setFailedTryLogin(true);
@@ -53,6 +55,7 @@ const Login = () => {
         {failedTryLogin ? (
           <p>{ `E-mail ou a senha incorretos. Por favor, tente novamente.` }</p>
         ) : null}
+        { loading ? <p style={ { color: 'black' } }>Carregando...</p> : null }
         <button type="submit" onClick={(event) => login(event)}>
           Entrar
         </button>
