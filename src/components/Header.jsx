@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/components/Header.css';
 import logo from '../images/coinsShop.png';
 
@@ -22,7 +22,9 @@ const Header = () => {
 
   return (
     <header className="header-container">
-      <img src={ logo } alt="" width="150px"/>
+      <Link to="/products">
+        <img src={ logo } alt="" width="150px"/>
+      </Link>
       <div className="email">{`Email: ${email}`}</div>
       <p>
         <span>{`${coins}`}</span>

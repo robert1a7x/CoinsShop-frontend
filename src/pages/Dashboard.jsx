@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import { postProduct, setToken } from '../services/requests';
-import '../styles/pages/Dashboard.css'
+import '../styles/pages/Dashboard.css';
 
 const Dashboard = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState();
   const [image, setImage] = useState('');
   const [postError, setPostError] = useState(false);
   const [postSuccess, setPostSuccess] = useState(false);
@@ -79,8 +79,8 @@ const Dashboard = () => {
               onChange={({ target: { value } }) => setImage(value)}
               placeholder="Endereço da imagem"
             />
-            {postError ? <p>{postError}</p> : null}
-            {postSuccess ? <p>Product criado com sucesso!</p> : null}
+            {postError ? <p className="error">{postError}</p> : null}
+            {postSuccess ? <p className="successs">Produto criado com sucesso!</p> : null}
             <button type="submit" onClick={(event) => createProduct(event)}>
               Cadastrar
             </button>

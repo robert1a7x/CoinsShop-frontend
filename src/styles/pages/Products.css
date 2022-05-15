@@ -10,7 +10,7 @@
 
 h1 {
 	text-align: center;
-	margin: 20px;
+	margin: 10px;
 }
 
 .product-card {
@@ -24,6 +24,7 @@ h1 {
 	width: 300px;
 	margin: 80px 40px;
 	padding: 15px;
+	cursor: pointer;
 }
 
 .product-card p {
